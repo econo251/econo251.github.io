@@ -1,81 +1,42 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>โปรไฟล์ของฉัน</title>
+  <meta charset="UTF-8">
+  <title>แนะนำตัว</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
-      color: #333;
-      margin: 0;
-      padding: 0;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    .profile-container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .intro-box {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #00bcd4;
-      margin-bottom: 20px;
+    .intro-box h1 {
+      color: #0077b6;
+      margin-bottom: 10px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: #00796b;
-    }
-
-    h3 {
-      margin-top: 5px;
-      color: #555;
-    }
-
-    p {
-      margin-top: 20px;
-      line-height: 1.6;
+    .intro-box p {
       font-size: 1.1em;
-    }
-
-    .contact {
-      margin-top: 25px;
-      font-size: 0.95em;
-      color: #666;
-    }
-
-    .contact a {
-      color: #00796b;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="profile-container">
-    <img src="https://i.pravatar.cc/150?img=32" alt="โปรไฟล์" class="profile-img" />
-    <h1>อรรษนัย นาคภู่</h1>
-    <h3>นักพัฒนาเว็บไซต์ | Freelance Frontend Developer</h3>
-    <p>
-      สวัสดีครับ ผมอรรษนัย นาคภู่
-    </p>
-    <div class="contact">
-      📧 อีเมล: <a href="mailto:kimfever123@gmail.com">kimfever123@gmail.com</a><br />
-    </div>
+  <div class="intro-box">
+    <h1>สวัสดีครับ ผมชื่อนายอรรษนัย นาคภู่</h1>
+    <p>นักศึกษาวิศวกรรมคอมพิวเตอร์ สนใจด้านเว็บและแอปพลิเคชัน<br>
+    มีความฝันอยากเป็น Full Stack Developer</p>
   </div>
 </body>
 </html>
