@@ -1,55 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>แนะนำตัว</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เรซูเม่ — นายอรรษัน นาคภู่</title>
   <style>
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ส่วนหัว */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border-bottom: 3px solid #0077cc;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
 
     .profile-img {
-  width: 120px;       /* ขนาดเริ่มต้น */
-  height: 120px;
-  max-width: 100%;    /* ไม่เกินขนาดกล่องที่อยู่ */
-  height: auto;       /* อัตราส่วนรูปภาพคงที่ */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid #0077b6;
-}
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f8ff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0077cc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .intro-box {
-      background-color: #ffffff;
-      padding: 30px 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
+    header h1 {
+      margin: 0;
+      color: #0077cc;
     }
 
-    .intro-box h1 {
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-
-    .intro-box p {
-      font-size: 1.1em;
+    header p {
+      margin: 4px 0;
       color: #333;
+    }
+
+    /* ส่วนหัวข้อแต่ละหมวด */
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-left: 6px solid #0077cc;
+      padding-left: 10px;
+      color: #0077cc;
+    }
+
+    ul {
+      list-style-type: square;
+      margin: 10px 0 10px 25px;
+    }
+
+    .skills, .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="intro-box">
-    <img src="super saiyan god.jpeg" alt="รูปโปรไฟล์" class="profile-img">
-    <h1>สวัสดีครับ ผมชื่อนายอรรษนัย นาคภู่</h1>
-    <p>นักศึกษา IT มีความสนใจในการเขียนโค้ด<br>
-    มีความฝันอยากเป็น Full Stack Developer</p>
-     <a href="https://github.com/econo251" class="btn-profile">ดูโปรไฟล์ของฉัน</a>
+  <div class="container">
+    <header>
+      <img src="IMG_20251017_112812.jpg" alt="รูปโปรไฟล์" class="profile-img">
+      <div>
+        <h1>นายอรรษัน นาคภู่</h1>
+        <p>คณะวิทยาศาสตร์ มหาวิทยาลัยวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ | ปีการศึกษา: ปี 2</p>
+        <p>ความสนใจเฉพาะทาง: การเขียน Web และ AI</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. ส่วนแนะนำตัว (Introduction / Profile)</h2>
+      <p>ชื่อ: นายอรรษัน นาคภู่<br>
+      คณะ: วิทยาศาสตร์ มหาวิทยาลัยวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ<br>
+      ปีการศึกษา: ปี 2<br>
+      ความสนใจเฉพาะทาง: สนใจทางการเขียน Web และ AI</p>
+    </section>
+
+    <section>
+      <h2>2. ทักษะ (Skills)</h2>
+      <div class="skills">
+        <strong>Programming:</strong>
+        <ul>
+          <li>Java</li>
+          <li>HTML/CSS</li>
+          <li>ได้เล็กน้อย</li>
+        </ul>
+        <strong>Soft Skills:</strong>
+        <ul>
+          <li>การสื่อสาร</li>
+          <li>การทํางานเป็นทีม</li>
+          <li>การแก้ปัญหา</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+      <p>-------------</p>
+    </section>
+
+    <section>
+      <h2>4. การศึกษา (Education)</h2>
+      <p>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี<br>
+      ปีการศึกษา: 2567-2568</p>
+    </section>
+
+    <section>
+      <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+      <p>-------------</p>
+    </section>
+
+    <section>
+      <h2>6. ติดต่อ (Contact)</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:67040233136@udru.ac.th">67040233136@udru.ac.th</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/Adsanai.Nakphu" target="_blank">Adsanai Nakphu</a></p>
+        <p>ที่อยู่จังหวัด: อุดรธานี</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. เป้าหมายในอนาคต (Future Goal)</h2>
+      <p>เรียนจบแล้วมีงานทำ</p>
+    </section>
+
+    <footer>
+      © 2025 นายอรรษัน นาคภู่ | Resume HTML Design
+    </footer>
   </div>
 </body>
 </html>
